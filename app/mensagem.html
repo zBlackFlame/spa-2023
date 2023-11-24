@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagem</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="txtNome" />
+        <select id="selPeriodo">
+            <option value="M">Manhã</option>
+            <option value="T">Tarde</option>
+            <option value="N">Noite</option>
+        </select>
+        <button type="button" id="btnOk">Ok</button>
+    </form>
+
+    <script>
+        document.querySelector("#btnOk").addEventListener("click", function(e) {
+            console.log(document.querySelector("#selPeriodo").value);
+        });
+    </script>
+</body>
+</html>
